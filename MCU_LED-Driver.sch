@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -33,10 +33,6 @@ Text HLabel 4750 700  2    50   Input ~ 0
 5V
 Text HLabel 5400 600  2    50   Input ~ 0
 GND
-Text HLabel 9700 2850 2    50   Input ~ 0
-USB_D+
-Text HLabel 9700 2750 2    50   Input ~ 0
-USB_D-
 $Comp
 L power:+5V #PWR0124
 U 1 1 5B392A5C
@@ -1025,4 +1021,12 @@ Wire Wire Line
 Connection ~ 10850 2050
 Wire Wire Line
 	10850 2050 10850 2100
+Wire Wire Line
+	10000 2750 9700 2750
+Wire Wire Line
+	9700 2850 10000 2850
+Text GLabel 10000 2750 2    50   BiDi ~ 0
+USBDP
+Text GLabel 10000 2850 2    50   BiDi ~ 0
+USBDM
 $EndSCHEMATC

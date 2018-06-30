@@ -307,10 +307,6 @@ Wire Wire Line
 Wire Wire Line
 	900  1950 850  1950
 Connection ~ 850  1950
-Text HLabel 2250 1100 1    50   Input ~ 0
-USB_D+
-Text HLabel 2250 2100 3    50   Input ~ 0
-USB_D-
 Text HLabel 1250 1350 1    50   Input ~ 0
 VUSB
 Wire Wire Line
@@ -338,8 +334,6 @@ Wire Wire Line
 	4000 3750 4000 3600
 Wire Wire Line
 	2550 4750 2750 4750
-Text HLabel 2650 4750 3    50   Input ~ 0
-VUSB
 Wire Wire Line
 	3500 4100 3550 4100
 Wire Wire Line
@@ -705,57 +699,29 @@ Wire Wire Line
 Wire Wire Line
 	9500 5750 8800 5750
 $Comp
-L Power_Protection:USBLC6-2SC6 U1
+L dk_TVS-Diodes:USBLC6-2SC6 U1
 U 1 1 5B469059
-P 2350 1600
-F 0 "U1" V 2000 1400 50  0000 R CNN
-F 1 "USBLC6-2SC6" V 2700 1450 50  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 1600 2000 50  0001 C CNN
-F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2550 1950 50  0001 C CNN
-	1    2350 1600
-	0    -1   -1   0   
+P 2400 1650
+F 0 "U1" H 2800 2200 50  0000 R CNN
+F 1 "USBLC6-2SC6" H 2550 2200 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 1650 2050 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2600 2000 50  0001 C CNN
+	1    2400 1650
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1850 1600 1850 1350
-Wire Wire Line
-	1850 1350 1200 1350
 $Comp
 L power:GND #PWR0123
 U 1 1 5B46C80F
-P 2850 1700
-F 0 "#PWR0123" H 2850 1450 50  0001 C CNN
-F 1 "GND" H 2855 1527 50  0000 C CNN
-F 2 "" H 2850 1700 50  0001 C CNN
-F 3 "" H 2850 1700 50  0001 C CNN
-	1    2850 1700
+P 1850 1650
+F 0 "#PWR0123" H 1850 1400 50  0001 C CNN
+F 1 "GND" H 1855 1477 50  0000 C CNN
+F 2 "" H 1850 1650 50  0001 C CNN
+F 3 "" H 1850 1650 50  0001 C CNN
+	1    1850 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 1700 2850 1600
-Wire Wire Line
-	1200 1650 1600 1650
-Wire Wire Line
-	1600 1650 1600 2100
-Wire Wire Line
-	1600 2100 2050 2100
-Wire Wire Line
-	2050 2100 2050 2600
-Wire Wire Line
-	2050 2600 2450 2600
-Wire Wire Line
-	2450 2600 2450 2100
-Wire Wire Line
 	1200 1550 1600 1550
-Wire Wire Line
-	1600 1550 1600 1050
-Wire Wire Line
-	1600 1050 2100 1050
-Wire Wire Line
-	2100 1050 2100 600 
-Wire Wire Line
-	2100 600  2450 600 
-Wire Wire Line
-	2450 600  2450 1100
 $Comp
 L Device:R R1
 U 1 1 5B47912C
@@ -829,9 +795,47 @@ Wire Wire Line
 	1800 3400 1200 3400
 Connection ~ 1800 3400
 Wire Wire Line
-	2250 3100 2850 3100
+	2250 3100 2650 3100
 Connection ~ 2250 3100
 Connection ~ 2050 3400
 Wire Wire Line
 	2050 3400 1800 3400
+Wire Wire Line
+	1900 1650 1850 1650
+Wire Wire Line
+	1250 1350 1200 1350
+Text HLabel 3000 1650 2    50   Input ~ 0
+VUSB
+Wire Wire Line
+	2900 1650 3000 1650
+Wire Wire Line
+	2900 1350 3000 1350
+Wire Wire Line
+	2900 1950 3000 1950
+Wire Wire Line
+	1750 1650 1750 1350
+Wire Wire Line
+	1750 1350 1900 1350
+Wire Wire Line
+	1200 1650 1750 1650
+Wire Wire Line
+	1600 1550 1600 1950
+Wire Wire Line
+	1600 1950 1900 1950
+Text GLabel 3000 1350 2    50   BiDi ~ 0
+USBDP
+Text GLabel 3000 1950 2    50   BiDi ~ 0
+USBDM
+Wire Wire Line
+	2550 4750 2400 4750
+Wire Wire Line
+	2400 4750 2400 3400
+Wire Wire Line
+	2400 3400 2650 3400
+Wire Wire Line
+	2650 3400 2650 3100
+Connection ~ 2550 4750
+Connection ~ 2650 3100
+Wire Wire Line
+	2650 3100 2850 3100
 $EndSCHEMATC

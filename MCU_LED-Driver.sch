@@ -509,7 +509,7 @@ U 1 1 5B364298
 P 6800 2550
 F 0 "U7" H 9500 3500 50  0000 C CNN
 F 1 "STM32F042F6P6" H 8800 3500 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 9600 3425 50  0001 R TNN
+F 2 "digikey-footprints:SOIC-24_W7.50mm" H 9600 3425 50  0001 R TNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6800 2550 50  0001 C CNN
 	1    6800 2550
 	1    0    0    -1  
@@ -520,7 +520,7 @@ U 1 1 5B37C53A
 P 1050 2450
 F 0 "J3" H 1400 3000 50  0000 R CNN
 F 1 "SWD_Conn" H 950 3000 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 1100 1900 50  0001 L TNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm_SMD" H 1100 1900 50  0001 L TNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 700 1200 50  0001 C CNN
 	1    1050 2450
 	1    0    0    -1  

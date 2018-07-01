@@ -59,7 +59,7 @@ U 1 1 5B35F16B
 P 7650 2400
 F 0 "U9" H 7991 2446 50  0000 L CNN
 F 1 "LM339" H 7991 2355 50  0000 L CNN
-F 2 "digikey-footprints:SOIC-24_W7.50mm" H 7600 2500 50  0001 C CNN
+F 2 "digikey-footprints:SOIC-14_W3.9mm" H 7600 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 7700 2600 50  0001 C CNN
 	1    7650 2400
 	1    0    0    -1  
@@ -81,7 +81,7 @@ U 3 1 5B35F271
 P 8050 3950
 F 0 "U9" H 8391 3996 50  0000 L CNN
 F 1 "LM339" H 8391 3905 50  0000 L CNN
-F 2 "digikey-footprints:SOIC-24_W7.50mm" H 8000 4050 50  0001 C CNN
+F 2 "digikey-footprints:SOIC-14_W3.9mm" H 8000 4050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 8100 4150 50  0001 C CNN
 	3    8050 3950
 	1    0    0    -1  
@@ -92,7 +92,7 @@ U 4 1 5B35F308
 P 8300 4750
 F 0 "U9" H 8641 4796 50  0000 L CNN
 F 1 "LM339" H 8641 4705 50  0000 L CNN
-F 2 "digikey-footprints:SOIC-24_W7.50mm" H 8250 4850 50  0001 C CNN
+F 2 "digikey-footprints:SOIC-14_W3.9mm" H 8250 4850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 8350 4950 50  0001 C CNN
 	4    8300 4750
 	1    0    0    -1  

@@ -20,7 +20,7 @@ U 1 1 5B392129
 P 3400 5350
 F 0 "U8" H 3425 6187 60  0000 C CNN
 F 1 "IS31FL3218" H 3425 6081 60  0000 C CNN
-F 2 "SMD_Packages:SOIC-24" H 3400 5350 60  0001 C CNN
+F 2 "digikey-footprints:SOIC-24_W7.50mm" H 3400 5350 60  0001 C CNN
 F 3 "G:/Andrew/Google Drive/Electronics/_Documentation/Hardware data sheets/ISSI 31FL 3218 18ch PWM LED driver.pdf" H 3400 5350 60  0001 C CNN
 	1    3400 5350
 	1    0    0    -1  
@@ -505,7 +505,7 @@ U 1 1 5B364298
 P 6800 2550
 F 0 "U7" H 9500 3500 50  0000 C CNN
 F 1 "STM32F042F6P6" H 8800 3500 50  0000 C CNN
-F 2 "digikey-footprints:SOIC-24_W7.50mm" H 9600 3425 50  0001 R TNN
+F 2 "digikey-footprints:TSSOP-20_W4.4mm" H 9600 3425 50  0001 R TNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6800 2550 50  0001 C CNN
 	1    6800 2550
 	1    0    0    -1  

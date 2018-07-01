@@ -70,7 +70,7 @@ U 2 1 5B35F1BA
 P 7850 3200
 F 0 "U9" H 8191 3246 50  0000 L CNN
 F 1 "LM339" H 8191 3155 50  0000 L CNN
-F 2 "digikey-footprints:SOIC-24_W7.50mm" H 7800 3300 50  0001 C CNN
+F 2 "digikey-footprints:SOIC-14_W3.9mm" H 7800 3300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 7900 3400 50  0001 C CNN
 	2    7850 3200
 	1    0    0    -1  

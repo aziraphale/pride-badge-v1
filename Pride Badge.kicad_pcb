@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 30)
+    (drawings 26)
     (tracks 853)
     (zones 0)
     (modules 93)
@@ -69,7 +69,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFF7F)
     (pcbplotparams
-      (layerselection 0x010fc_ffffffff)
+      (layerselection 0x01000_7fffffff)
       (usegerberextensions false)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -92,9 +92,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "gerbers"))
   )
 
   (net 0 "")
@@ -4232,10 +4232,10 @@
   (gr_text "Show\nBatt\nLevel" (at 80.4 33.35) (layer F.Cu)
     (effects (font (size 1 1) (thickness 0.15)) (justify right))
   )
-  (gr_line (start 27.7 176.45) (end 27.7 16.5) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 127.7 176.45) (end 27.7 176.45) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 127.7 16.5) (end 127.7 176.45) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 27.7 16.5) (end 127.7 16.5) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 27.7 150.4) (end 27.7 20.399962) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 127.7 150.4) (end 27.7 150.4) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 127.7 20.4) (end 127.7 150.4) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 27.7 20.4) (end 127.700012 20.4) (layer Edge.Cuts) (width 0.2))
   (gr_text SD (at 47.65 71.75) (layer F.Cu) (tstamp 5B37EA1F)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -4257,10 +4257,6 @@
   (gr_text USB (at 61.35 92.45 90) (layer F.Cu)
     (effects (font (size 1.5 1.5) (thickness 0.15)))
   )
-  (gr_line (start 127.7 176.45) (end 127.7 16.5) (layer F.SilkS) (width 0.2))
-  (gr_line (start 27.7 176.45) (end 127.7 176.45) (layer F.SilkS) (width 0.2))
-  (gr_line (start 27.7 16.5) (end 27.7 176.45) (layer F.SilkS) (width 0.2))
-  (gr_line (start 127.7 16.5) (end 27.7 16.5) (layer F.SilkS) (width 0.2))
 
   (segment (start 69.6 74.35) (end 69.6 71.7) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 69.6 71.7) (end 75.6 65.7) (width 0.25) (layer F.Cu) (net 1))
@@ -5116,7 +5112,7 @@
   (segment (start 63.15 94.760051) (end 63.1 94.710051) (width 0.25) (layer F.Cu) (net 72))
   (segment (start 63.15 95.75) (end 63.15 94.760051) (width 0.25) (layer F.Cu) (net 72))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5B3827E4) (hatch edge 0.508)
     (connect_pads (clearance 0.4))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -5128,7 +5124,7 @@
     )
     (filled_polygon
       (pts
-        (xy 127.073001 175.823) (xy 28.327 175.823) (xy 28.327 137.78575) (xy 55.215 137.78575) (xy 55.215 138.25131)
+        (xy 127.073001 149.773) (xy 28.327 149.773) (xy 28.327 137.78575) (xy 55.215 137.78575) (xy 55.215 138.25131)
         (xy 55.311673 138.484699) (xy 55.490302 138.663327) (xy 55.723691 138.76) (xy 56.06425 138.76) (xy 56.223 138.60125)
         (xy 56.223 137.627) (xy 55.37375 137.627) (xy 55.215 137.78575) (xy 28.327 137.78575) (xy 28.327 134.88575)
         (xy 53.415 134.88575) (xy 53.415 135.82631) (xy 53.511673 136.059699) (xy 53.690302 136.238327) (xy 53.923691 136.335)
@@ -6148,7 +6144,7 @@
         (xy 35.093562 37.934372) (xy 35.093561 37.934373) (xy 34.98583 38.095603) (xy 34.935228 38.35) (xy 34.948001 38.414215)
         (xy 34.948 67.46791) (xy 34.894375 67.478577) (xy 34.720055 67.595055) (xy 34.603577 67.769375) (xy 34.562676 67.975)
         (xy 28.327 67.975) (xy 28.327 22.9805) (xy 52.07419 22.9805) (xy 52.07419 25.6845) (xy 56.325809 25.6845)
-        (xy 56.325809 22.9805) (xy 52.07419 22.9805) (xy 28.327 22.9805) (xy 28.327 17.127) (xy 127.073 17.127)
+        (xy 56.325809 22.9805) (xy 52.07419 22.9805) (xy 28.327 22.9805) (xy 28.327 21.027) (xy 127.073 21.027)
       )
     )
     (filled_polygon
@@ -6256,7 +6252,7 @@
       )
     )
   )
-  (zone (net 5) (net_name +5V) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 5) (net_name +5V) (layer F.Cu) (tstamp 5B3827E1) (hatch edge 0.508)
     (priority 2)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)

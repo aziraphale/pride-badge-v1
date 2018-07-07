@@ -636,17 +636,6 @@ F 3 "~" H 2200 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
-U 1 1 5B3980DF
-P 2450 6550
-F 0 "R11" H 2520 6596 50  0000 L CNN
-F 1 "100k" H 2520 6505 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 2380 6550 50  0001 C CNN
-F 3 "~" H 2450 6550 50  0001 C CNN
-	1    2450 6550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5B398165
 P 2650 7250
@@ -664,10 +653,6 @@ Wire Wire Line
 Connection ~ 2650 7550
 Wire Wire Line
 	2650 7550 2900 7550
-Wire Wire Line
-	2450 6400 2450 6350
-Wire Wire Line
-	2450 6350 2900 6350
 Wire Wire Line
 	1850 5950 1850 6050
 Connection ~ 1850 6050
@@ -716,17 +701,6 @@ $EndComp
 Connection ~ 2500 5300
 Wire Wire Line
 	2500 5300 2700 5300
-$Comp
-L power:GND #PWR0136
-U 1 1 5B3B0C32
-P 2450 6700
-F 0 "#PWR0136" H 2450 6450 50  0001 C CNN
-F 1 "GND" H 2455 6527 50  0000 C CNN
-F 2 "" H 2450 6700 50  0001 C CNN
-F 3 "" H 2450 6700 50  0001 C CNN
-	1    2450 6700
-	1    0    0    -1  
-$EndComp
 Text Notes 2500 7500 2    51   ~ 0
 Max LED current is:\nI_max = 58.5 * (1.3 / R_ext)\n\nR_ext = 3k3 => 23mA\nR_ext = 3k6 => 21mA\nR_ext = 3k9 => 19.5mA
 $Comp

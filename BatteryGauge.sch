@@ -411,7 +411,7 @@ L Device:C C16
 U 1 1 5B365EC5
 P 2600 4100
 F 0 "C16" H 2715 4146 50  0000 L CNN
-F 1 "10uF" H 2715 4055 50  0000 L CNN
+F 1 "10µF" H 2715 4055 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 2638 3950 50  0001 C CNN
 F 3 "~" H 2600 4100 50  0001 C CNN
 	1    2600 4100
@@ -420,7 +420,7 @@ $EndComp
 Wire Wire Line
 	2600 3950 2600 3800
 Wire Wire Line
-	2600 3800 2750 3800
+	2600 3800 2650 3800
 Wire Wire Line
 	2600 4250 2600 4350
 Wire Wire Line
@@ -431,7 +431,7 @@ U 1 1 5B366448
 P 2100 4100
 F 0 "SW6" V 2150 4450 50  0000 R CNN
 F 1 "SW_SeeBattGauge" V 2250 4850 50  0000 R CNN
-F 2 "my-footprints:Tiny_SMD_Side_Btn_4x2.5mm" H 2100 4300 50  0001 C CNN
+F 2 "my-footprints:Btn_SMD_6x3.5mm" H 2100 4300 50  0001 C CNN
 F 3 "" H 2100 4300 50  0001 C CNN
 	1    2100 4100
 	0    -1   -1   0   
@@ -444,7 +444,7 @@ Connection ~ 2600 4350
 Wire Wire Line
 	2100 3750 2100 3900
 Wire Wire Line
-	2100 3900 2750 3900
+	2100 3900 2150 3900
 Connection ~ 2100 3900
 Wire Wire Line
 	2100 3450 2100 3100
@@ -531,7 +531,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 4100 6700 4500
 Wire Wire Line
-	6700 2150 6950 2150
+	6700 2150 6850 2150
 Wire Wire Line
 	6950 2150 6950 2300
 Wire Wire Line
@@ -574,7 +574,7 @@ Connection ~ 6700 4500
 Wire Wire Line
 	6700 4500 6700 4600
 Wire Wire Line
-	7150 5150 7450 5150
+	7150 5150 7400 5150
 Wire Wire Line
 	7450 5150 7450 4850
 Wire Wire Line
@@ -659,7 +659,126 @@ Wire Wire Line
 Text Label 8500 1500 0    50   ~ 0
 OPAMP_GND
 Wire Wire Line
-	3800 3800 4400 3800
+	3800 3800 3900 3800
 Text Notes 6200 2150 0    51   ~ 0
 ~~1.95V here
+$Comp
+L Connector_Specialized:Test_Point TP14
+U 1 1 5B4F334B
+P 3900 3800
+F 0 "TP14" H 3958 3920 50  0000 L CNN
+F 1 "TP_555OUT" H 3958 3829 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 4100 3800 50  0001 C CNN
+F 3 "~" H 4100 3800 50  0001 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 3800
+Wire Wire Line
+	3900 3800 4400 3800
+$Comp
+L Connector_Specialized:Test_Point TP10
+U 1 1 5B4F37C5
+P 6850 2150
+F 0 "TP10" H 6908 2270 50  0000 L CNN
+F 1 "TP_339+_BLUE" H 6908 2179 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 7050 2150 50  0001 C CNN
+F 3 "~" H 7050 2150 50  0001 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 2150
+Wire Wire Line
+	6850 2150 6950 2150
+$Comp
+L Connector_Specialized:Test_Point TP11
+U 1 1 5B4F3EB9
+P 6950 3000
+F 0 "TP11" H 7008 3120 50  0000 L CNN
+F 1 "TP_339+_GREEN" H 7008 3029 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 7150 3000 50  0001 C CNN
+F 3 "~" H 7150 3000 50  0001 C CNN
+	1    6950 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3000
+$Comp
+L Connector_Specialized:Test_Point TP12
+U 1 1 5B4F3F53
+P 6950 3750
+F 0 "TP12" H 7008 3870 50  0000 L CNN
+F 1 "TP_339+_YELLOW" H 7008 3779 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3750
+$Comp
+L Connector_Specialized:Test_Point TP15
+U 1 1 5B4F3FCD
+P 6950 4500
+F 0 "TP15" H 7008 4620 50  0000 L CNN
+F 1 "TP_339+_ORANGE" H 7008 4529 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 7150 4500 50  0001 C CNN
+F 3 "~" H 7150 4500 50  0001 C CNN
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 4500
+$Comp
+L Connector_Specialized:Test_Point TP16
+U 1 1 5B4F4047
+P 7400 5150
+F 0 "TP16" H 7458 5270 50  0000 L CNN
+F 1 "TP_339-" H 7458 5179 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 7600 5150 50  0001 C CNN
+F 3 "~" H 7600 5150 50  0001 C CNN
+	1    7400 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 5150
+Wire Wire Line
+	7400 5150 7450 5150
+$Comp
+L Connector_Specialized:Test_Point TP13
+U 1 1 5B50A1EA
+P 2650 3800
+F 0 "TP13" H 2708 3920 50  0000 L CNN
+F 1 "TP_555THRES" H 2708 3829 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 2850 3800 50  0001 C CNN
+F 3 "~" H 2850 3800 50  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 3800
+Wire Wire Line
+	2650 3800 2750 3800
+$Comp
+L Connector_Specialized:Test_Point TP27
+U 1 1 5B45B9D4
+P 4250 1350
+F 0 "TP27" H 4308 1470 50  0000 L CNN
+F 1 "TP_GND" H 4308 1379 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 4450 1350 50  0001 C CNN
+F 3 "~" H 4450 1350 50  0001 C CNN
+	1    4250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1350 4050 1350
+$Comp
+L Connector_Specialized:Test_Point TP30
+U 1 1 5B47E5AE
+P 2150 3900
+F 0 "TP30" H 2208 4020 50  0000 L CNN
+F 1 "TP_555TRIG" H 2208 3929 50  0000 L CNN
+F 2 "my-footprints:Test_Point_1mm" H 2350 3900 50  0001 C CNN
+F 3 "~" H 2350 3900 50  0001 C CNN
+	1    2150 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 3900
+Wire Wire Line
+	2150 3900 2750 3900
 $EndSCHEMATC

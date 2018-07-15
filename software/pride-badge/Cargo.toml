@@ -1,0 +1,47 @@
+[package]
+name = "pride-badge"
+version = "0.1.0"
+description = "Firmware for my illuminated Pride badge"
+authors = ["Andrew Gillard <andrew@lorddeath.net>"]
+repository = "https://github.com/aziraphale/pride-badge-v1"
+categories = [
+    "embedded",
+    "no-std",
+]
+
+[dependencies]
+stm32f042-hal = "0.4.1"
+bare-metal = "0.2.0"
+cortex-m = "0.5.2"
+cortex-m-rt = "0.5.1"
+nb = "0.1.1"
+panic-abort = "0.2.0"
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
+[dependencies.embedded-hal]
+features = ["unproven"]
+version = "0.2.1"
+
+[dependencies.stm32f042]
+features = ["rt"]
+version = "0.6.1"
+
+[dev-dependencies]
+
+[features]
+default = ["rt"]
+rt = []
+
+[profile.dev]
+debug = true
+lto = false
+incremental = true
+
+[profile.release]
+debug = false
+lto = true
+incremental = false
+opt-level = "s"

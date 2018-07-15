@@ -1,0 +1,6 @@
+(gerbv-file-version! "2.0A")
+(define-layer! 2 (cons 'filename "gerbers/Pride Badge-F.Cu.gbr")(cons 'visible #t)(cons 'color #(0 0 0)))
+(define-layer! 1 (cons 'filename "gerbers/Pride Badge-Edge.Cuts.gbr")(cons 'visible #t)(cons 'color #(0 0 0)))
+(define-layer! 0 (cons 'filename "gerbers/Pride Badge.drl")(cons 'visible #t)(cons 'color #(65535 65535 65535))(cons 'attribs (list (list 'autodetect 'Boolean 1) (list 'zero_supression 'Enum 1) (list 'units 'Enum 1) (list 'digits 'Integer 3))))
+(define-layer! -1 (cons 'filename "G:/Andrew/Google Drive/Electronics/52. Pride Badge/gerbers")(cons 'visible #f)(cons 'color #(65535 65535 65535)))
+(set-render-type! 3)

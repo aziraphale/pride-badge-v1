@@ -149,7 +149,7 @@ fn main() -> ! {
             let _ = update_leds(&mut i2c, &values);
             delay.delay_ms(2_000_u16);
             
-            values = [0xFF; 18];
+            values = [0x00; 18];
             let _ = update_leds(&mut i2c, &values);
             delay.delay_ms(500_u16);
         }

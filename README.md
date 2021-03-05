@@ -1,1 +1,1 @@
-52. Pride Badge
+Illuminated Pride Badge
